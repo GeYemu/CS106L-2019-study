@@ -6,7 +6,7 @@ int main() {
     std::string data = "100 example";
     int number;
     std::string text;
-
+auto i =("ksdfhfkj09458039");
     // 创建istringstream对象
     std::istringstream iss(data);
 
