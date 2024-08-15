@@ -4,7 +4,7 @@
 using namespace std;
 
 string promptUserForFile(ifstream& stream,
-                         string prompt="",
+                         string prompt="",//默认值：当你为函数参数定义一个默认值时，如果调用者没有为该参数提供实参，函数就会使用这个默认值。
                          string reprompt="")                     
 {
 string line;//創建一個字符串為文件名字
@@ -20,7 +20,7 @@ if(stream)//如果能打開
 return line;
 }
 cout<<reprompt;
-stream.clear();
+stream.clear();//清除流狀態，然後回到循環
 }
 
 }
